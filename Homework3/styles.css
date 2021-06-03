@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0:
+}
+
+
+body {
+    background-color: rgba(150,150,150,.6);
+}
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+.header {
+    padding-top:  1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(220,110,110,1);      
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    flex-direction: column;
+}
+.cart-button {
+    padding: 3px 12px;
+    color: #fff;
+    background: #cb11ab linear-gradient(90deg,#bf5ae0 0,#a811da 100%);
+    border-radius: 40px;
+    cursor: pointer;
+}
+.header-bucket{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.header-heading{
+    font-size: 24px;
+    color: #fff;
+}
+.bucket-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.bucket-item{
+    position: relative;
+}
+.bucket-item-delete{
+    position: absolute;
+    top: 0;
+    right:  0;
+}   
+.main {
+    background-color: rgba(50,133,5,1);
+}
+.goods-list {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.goods-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid wheat;
+    width: 150px;
+    box-sizing: content-box;
+    margin: 10px 10px;
+}
+
+.goods-busket {
+    
+}
+.bucket-item{
+    border:  2px solid black;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
