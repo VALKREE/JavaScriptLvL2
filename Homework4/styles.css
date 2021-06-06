@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+}
+
+.cart-button {
+    margin-left: auto;
+}
+
+.goods-list {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.goods-item {
+    border: 1px solid wheat;
+    width: 150px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    margin: 10px 10px;
+}
+
+.homework4-3{
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem auto; 
+    max-width: 600px;
+    width: 100%;
+}
+.form__label, .form__input, .form__textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 24px;
+    margin: 1rem;
+}
+.form__label{
+    text-align: center;
+}
+.form__input, .form__textarea{   
+    border: 2px solid black;
+}
+.form__textarea{
+    height: 150px;
+}
+.form__button{
+    border: none;
+    height: 64px;
+    padding: 12px 35%;
+    max-width: 600px;
+    margin: 5px;
+    background-color: #b343cf;
+    color: #fff;
+    font-size: 18px;
+}
