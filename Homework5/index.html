@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app">
+	    <header>
+	      <input type="text" class="goods-search" v-model="searchLine"/>
+	      <button class="search-button" type="button" v-on:click="filterGoods">Искать</button>
+	      
+	      <div class="header__bucket" v-show="isVisibleCart">
+	      	<div class="header__bucket-item" v-for="good in bucketGoods">
+	      		<h3 class="header__bucket-name">{{good.product_name}}</h3>
+	      		<p class="header__bucket-price">{{good.price}}</p>
+	      		<button v-on:click="removeToBucket($event)">Удалить</button>
+	      	</div>
+	      </div>
+	      <button class="cart-button bucket-close" type="button"v-on:click="isVisibleCart=!isVisibleCart">{{isVisibleCart?'Корзина - Скрыть':'Корзина - Показать'}}</button>
+	    </header>
+	    <main>
+	      <div class="goods-list">
+	      	<div class="goods-item" v-for="good in filteredGoods" >
+		      <h3>{{good.product_name}}</h3>
+		      <p>{{good.price}}</p>
+		      <button v-on:click="addToBucket($event)" v-bind:good.product_name="good.product_name">Добавить</button>
+		    </div>
+	      </div>
+	    </main>
+  	</div>
+</body>
+<script src="./vue.js"></script>
+<script src='./script.js'></script> 
+</html>
