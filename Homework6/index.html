@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Магазин</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+	<div class="wrapper" id="app">
+		<header class="header center">
+			<div class="header__submenu">
+				<search></search>
+				<basket></basket>
+			</div>
+			<hr class="header__hr">
+			<div class="header__menu">
+				<a href="#" class="header__menuLink">Главная</a>
+				<a href="#" class="header__menuLink">О нас</a>
+				<a href="#" class="header__menuLink">Товары</a>
+				<a href="#" class="header__menuLink">Контакты</a>
+			</div>
+		</header>
+		<main class="main center">
+			<goods-list :goods="filteredGoods"></goods-list>
+		</main>
+		<footer class="footer center">
+			<div class="footer__menu">
+				<a href="#" class="footer__menuLink">Главная</a>
+				<a href="#" class="footer__menuLink">О нас</a>
+				<a href="#" class="footer__menuLink">Товары</a>
+				<a href="#" class="footer__menuLink">Контакты</a>
+			</div>
+		</footer>
+	</div>
+	<script src="./Scripts/vue.js"></script>
+	<script src="./Scripts/scripts.js"></script>
+</body>
+</html>
