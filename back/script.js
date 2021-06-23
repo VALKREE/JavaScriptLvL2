@@ -1,5 +1,5 @@
-import vue from "./components/vue.js"
 const API_URL = "http://localhost:3000";
+const Vue = require('vue');
 import compApp from './components/compApp.js';
 import compSearch from './components/compSearch.js';
 import compBasket from './components/compBasket.js';

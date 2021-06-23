@@ -4,4 +4,10 @@ module.exports = {
   output: {
       filename: "./build.js",
   },
+  watch: true,
+  watchOptions: {
+    aggregateTimeout: 200,
+    poll: 3000,
+    ignored: /node_modules/,
+  },
 };
